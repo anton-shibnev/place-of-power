@@ -1,12 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Header, Footer, Main } from '../components';
-import routes from './routes';
-import LayoutContent from '../content/LayoutContent.json';
+import { Main } from '../components';
+import { routes } from './routes';
 
 const Layout = () => (
   <>
-    <Header navList={routes} />
     <Main>
       <Suspense fallback={<h1>loading...</h1>}>
         <Switch>
@@ -23,7 +21,6 @@ const Layout = () => (
         </Switch>
       </Suspense>
     </Main>
-    <Footer content={LayoutContent.footer} />
   </>
 );
 

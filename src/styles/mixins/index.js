@@ -21,6 +21,7 @@ export { flexCenter } from './flexCenter';
 export { wider } from './wider';
 export { gradientText } from './gradientText';
 export { gridRow } from './gridRow';
+export { fixedSpread } from './fixedSpread';
 
 // common
 export const display = (thing) => mq('display', thing);

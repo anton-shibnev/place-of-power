@@ -1,6 +1,16 @@
 {
-  "hero": {
-    "title": "Hero title",
-    "desc": "Hero desc"
+  "btn": {
+    "label": "Remove brand"
+  },
+  "modal": {
+    "headerTitle": "Remove brand",
+    "title": "Are sure you wish to remove FAME_4?",
+    "desc": "The remaining stocks are worth: $768.231",
+    "btnYes": {
+      "label": "YES"
+    },
+    "btnNo": {
+      "label": "No"
+    }
   }
 }

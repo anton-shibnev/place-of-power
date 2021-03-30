@@ -1,4 +1,4 @@
-const routes = [
+export const routes = [
   {
     path: '/',
     exact: true,
@@ -6,5 +6,3 @@ const routes = [
     label: 'home',
   },
 ];
-
-export default routes;

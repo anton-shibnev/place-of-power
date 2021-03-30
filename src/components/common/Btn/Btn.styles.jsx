@@ -1,31 +1,28 @@
 import styled from 'styled-components/macro';
-import { padding, transition, hoverFocus, font, rem } from '../../style/modal';
-import { BtnReset } from '../../style/helpers';
+import { rem, padding, hoverFocus, font } from '../../../styles/mixins';
+import { BtnReset } from '../../../styles/helpers';
 
 export const Btn = styled(BtnReset)`
   color: ${(props) => props.theme.WHITE};
   ${font({
-    'font-size': { mob: '14px', xs: '16px' },
-    'line-height': { mob: '16px', xs: '19px' },
-    'font-weight': 'bold',
+    'font-size': '12px',
+    'line-height': '14px',
+    'font-weight': '500',
   })};
 
   display: inline-flex;
 
+  text-align: center;
+
+  color: #11a0f8;
+
   text-decoration: none;
-  background-color: ${(props) => props.theme.SECONDARY_DARKER};
-  text-transform: uppercase;
+  border: 1px solid;
+  border-color: ${({ ghost }) => (ghost ? '#fff' : '#11a0f8')};
+  border-radius: ${rem('2px')};
 
+  ${padding('8px 14px')};
   position: relative;
-`;
-
-export const BtnBody = styled.span`
-  ${padding({ mob: '16px 20px 14px', xs: '16px 17px' })};
-
-  ${transition('transform')};
-  background-color: ${(props) => props.theme.SECONDARY};
-  transform: translateY(${rem('-2px')});
-  width: 100%;
 
   ${hoverFocus``};
 `;

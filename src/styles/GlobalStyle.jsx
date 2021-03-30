@@ -25,9 +25,6 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     min-height: 100vh;
-    display: grid;
-    align-content: start;
-    grid-template-rows: auto 1fr auto; 
     background-color: ${(props) => props.theme.BG_COLOR};
     user-select: none;
   }
